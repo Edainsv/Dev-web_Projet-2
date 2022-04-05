@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+img{
+	width: 280px;
+}
+
+
+/**** HEADER ****/
+header{
+	width: 95%;
+}
+
+/**** SECTION ****/
+
+
+/**** FOOTER ****/
+
