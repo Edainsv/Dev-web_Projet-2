@@ -2,34 +2,49 @@
 	*{
 		margin: 0;
 		padding: 0;
+		overflow: hidden;
+	}
+
+	body{
+		overflow-y: scroll;
+		height: 100vh;
+		width: 100%;
 	}
 
 	#app{
 		font-family: 'Raleway', sans-serif;
 		margin: auto;
-		width: 90%;
+		width: 1440px;
+		max-width: 80%;
 	}
 
 	h1{
 		font-size: 1.2em;
 	}
 	h2{
-		font-size: 1.1em;
-		color: blue;
+		font-size: 1em;
 	}
 	h3{
-		font-size: 1em;
+		font-size: 0.9em;
 		font-weight: bold;
 	}
 	h4{
-		font-size: 0.9em;
-		color: purple;
+		font-size: 0.8em;
 	}
 
+	.star-on{
+		color: #0065FC;
+		font-size: 0.6em;
+	}
+	.star-off{
+		color: #F2F2F2;
+		font-size: 0.6em;
+	}
 
 /* Header : nav */
 	.main-header{
 		display: flex;
+		font-size: 0.6em;
 		justify-content: space-between;
 	}
 
@@ -71,49 +86,51 @@
 	.find-map{
 		margin-top: 20px;
 	}
+
 	.find-map div{
 		display: flex;
-		height: 40px;
 	}
 
-	.find-map div > div:first-child{
+	.find-map div > label{
 		background-color: #F2F2F2;
 		border-top-left-radius: 10px;
 		border-bottom-left-radius: 10px;
-		padding-left: 15px;
-		padding-right: 15px;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		padding: 8px 5px;
+		width: 20px;
+	}
+
+	.find-map input{
+		border: none;
+		font-size: 0.5em;
+		padding: 0px 10px;
 	}
 	.find-map input:first-child{
-		border:  none;
 		border-top: 1px solid #F2F2F2;
 		border-bottom: 1px solid #F2F2F2;
-		padding: 0px 20px;
+		min-width: 140px;
+		max-width: 100%;
 	}
 	.find-map input:last-child{
 		background-color: #0065FC;
-		border: none;
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
 		color: white;
 		cursor: pointer;
 		font-weight: bold;
-		padding: 0px 20px;
 		text-shadow: 1px 1px 3px transparent;
 	}
 	.find-map input:last-child:hover{
 		text-shadow: 1px 1px 3px #000;
 	}
 
-	.find-map i{
-		background-color: #F2F2F2;
-		font-size: 20px;
-		line-height: 40px;
-	}
-
 
 /* Header : filtre */
 	.filtre{
 		display: flex;
+		flex-wrap: wrap;
 		margin-top: 30px;
 	}
 
@@ -122,59 +139,59 @@
 		border: 2px solid #F2F2F2;
 		border-radius: 25px;
 		display: flex;
-		height: 40px;
-		margin: 0px 10px;
+		justify-content: center;
+		margin: 3px 5px;
 	}
 
 	.filtre > div:first-child{
-	border: none;
-	display: flex;
-	height: 40px;
-	margin-right: 20px;
+		border: none;
+		display: flex;
+		margin-right: 20px;
 	}
 
-	.filtre > div div{
+	.filtre div > div{
 		padding: 0px 15px;
 	}
-
 	.filtre i{
+		align-items: center;
 		background-color: #DEEBFF;
 		border-radius: 50%;
 		color: #0065FC;
-		height: 100%;
-		line-height: 40px;
+		display: flex;
+		font-size: 80%;
+		height: 35px;
+		justify-content: center;
 		text-align: center;
-		width: 40px;
+		width: 35px;
 	}
 
-	.info-recherche{
+	.logo-info{
 		display: flex;
 		margin-top: 25px;
 	}
 
-	.info-recherche div{
-		display: flex;
+	.logo-info div{
 		align-items: center;
+		display: flex;
+		font-size: 0.6em;
+		padding: 0px 15px;
 	}
 
-	.info-recherche i{
+	.logo-info i{
 		border: 2px solid #F2F2F2;
 		border-radius: 50%;
 		color: #0065FC;
 		font-size: 80%;
 		margin-right: 10px;
-		padding: 6px;
+		padding: 3px 5px;
 		text-align: center;
-		width: 15px;
 	}
 
-
-/**** SECTION ****/
 /* Section : hebergement */
 	.hebergement{
 		display: flex;
-		justify-content: space-between;
 		flex-wrap: wrap;
+		justify-content: space-between;
 		margin-top: 25px;
 		width: 100%;
 	}
@@ -182,47 +199,52 @@
 	.hebergement article{
 		background-color: #F2F2F2;
 		border-radius: 15px;
-		height: 100%;
-		padding-bottom: 30px;
-		padding-left: 3%;
-		padding-right: 3%;
-		padding-top: 30px;
 	}
 	.hebergement article:first-child{
-		width: 58%;
-	}.hebergement article:last-child{
-		width: 25%;
+		width: 68%;
 	}
-
-	.hebergement article > div{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
-
-	.hebergement article:first-child div > a{
-		background-color: white;
-		border: 5px solid white;
-		border-radius: 15px;
-		display: flex;
-		flex-direction: column;
-		height: 20vh;
-		margin-bottom: 30px;
-		overflow: hidden;
-		text-decoration: none;
+	.hebergement article:last-child{
 		width: 30%;
+	}
+	.hebergement article > div{
+		margin:  auto;
+		padding: 25px 20px;
+	}
+
+	.hebergement div > div{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.hebergement a{
+		background: #FFF;
+		border: 4px solid #FFF;
+		border-radius: 15px;
+		box-shadow: 1px 1px 6px rgba(0,0,0, 0.5);
+		color: black;
+		height: 160px;
+		margin: 10px 0px;
+		padding: 2px;
+		text-decoration: none;
+		width: 28%;
+	}
+	.hebergement a:hover{
+		box-shadow: 1px 1px 4px black;
+		margin: 1px 1px;
 	}
 
 	.hebergement img{
-		height: 55%;
+
+		height: 65%;
 		width: 100%;
+		object-fit: cover;
 	}
+
+	.hebergement span p{
+		font-size: 0.7em;
+		padding: 3px 0px;
+	}
+
 
 /* Section : activité */
-	.activite img{
-		display: none;
-		background-size: cover;
-	}
-
-/**** FOOTER ****/
-

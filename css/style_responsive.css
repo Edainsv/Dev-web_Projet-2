@@ -1,8 +1,25 @@
-/* Tablet adapter */
-@media screen and (min-width: 550px) and (max-width: 600px){
-	body{
-		background-color: red;
+/* Reponsive desktop normal */
+@media screen and (max-width: 1024px)
+{
+	#app{
+		min-width: 90%;
+		width: 1024px;
 	}
 }
 
-/* Phone adapter */
+/* Responsive tablette */
+@media screen and (max-width: 992px)
+{
+	#app{
+		width: 992px;
+	}
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 768px)
+{
+	#app{
+		min-width: 95%;
+		width: 768px;
+	}
+}

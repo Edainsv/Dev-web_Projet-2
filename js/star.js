@@ -4,7 +4,7 @@
 */
 
 function NewStar(nb) {
-	var showStar = document.getElementsByClassName('test-star');
+	var showStar = document.getElementsByClassName('star');
 	var allStar = new Array(5);
 	var maxStar = 5;
 
