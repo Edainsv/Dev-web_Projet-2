@@ -13,6 +13,9 @@
 
 	#app{
 		font-family: 'Raleway', sans-serif;
+	}
+
+	#app > div{
 		margin: auto;
 		width: 1440px;
 		max-width: 80%;
@@ -188,7 +191,7 @@
 	}
 
 /* Section : hebergement */
-	.hebergement{
+	.card{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -196,19 +199,15 @@
 		width: 100%;
 	}
 
-	.hebergement article{
+	.hebergement{
 		background-color: #F2F2F2;
 		border-radius: 15px;
-	}
-	.hebergement article:first-child{
 		width: 68%;
 	}
-	.hebergement article:last-child{
-		width: 30%;
-	}
-	.hebergement article > div{
+
+	.hebergement > div{
 		margin:  auto;
-		padding: 25px 20px;
+		padding: 25px 20px 10px 25px;
 	}
 
 	.hebergement div > div{
@@ -218,8 +217,8 @@
 	}
 
 	.hebergement a{
-		background: #FFF;
-		border: 4px solid #FFF;
+		background-color: #FFF;
+		border: 2px solid #FFF;
 		border-radius: 15px;
 		box-shadow: 1px 1px 6px rgba(0,0,0, 0.5);
 		color: black;
@@ -227,24 +226,126 @@
 		margin: 10px 0px;
 		padding: 2px;
 		text-decoration: none;
-		width: 28%;
+		width: 30%;
 	}
 	.hebergement a:hover{
 		box-shadow: 1px 1px 4px black;
-		margin: 1px 1px;
+		padding: 1px;
 	}
 
 	.hebergement img{
-
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
 		height: 65%;
-		width: 100%;
 		object-fit: cover;
+		width: 100%;
 	}
 
 	.hebergement span p{
+		font-size: 0.8em;
+	}
+
+	.hebergement a h4, .hebergement a p, .hebergement a > span span{
+		padding-left: 10px;
+	}
+
+	.showMore{
+		font-size: 1em;
+		font-weight: bold;
+		padding: 10px 0px;
+	}
+
+
+/* Section : populaire */
+	.populaire{
+		background-color: #F2F2F2;
+		border-radius: 15px;
+		width: 30%;
+	}
+
+	.populaire > div{		
+		margin:  auto;
+		padding: 25px 20px 10px 25px;
+	}
+
+	.populaire > div div{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	.populaire a{
+		background-color: #FFF;
+		border: 2px solid #FFF;
+		border-radius: 15px;
+		box-shadow: 1px 1px 6px rgba(0,0,0, 0.5);
+		color: black;
+		display: flex;
+		height: 110px;
+		justify-content: space-between;
+		margin: 10px 0px;
+		padding: 2px;
+		text-decoration: none;
+		width: 95%;
+	}
+	.populaire a:hover{
+		box-shadow: 1px 1px 4px black;
+		padding: 1px;
+	}
+
+	.populaire img{
+		border-top-left-radius: 12px;
+		border-bottom-left-radius: 12px;
+		height: 100%;
+		object-fit: cover;
+		width: 40%;
+	}
+
+	.populaire a > span{
+		width: 55%;
+		padding: 3px 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.populaire span p{
 		font-size: 0.7em;
 		padding: 3px 0px;
 	}
 
 
-/* Section : activité */
+/* Footer  */
+	footer{
+		background-color: #F2F2F2;
+		margin-top: 30px;
+		padding-bottom: 40px;
+		padding-top: 20px;
+	}
+
+	footer > div{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: auto;
+		max-width: 80%;
+		width: 1440px;
+	}
+
+	footer > div div{
+		width: 33.3%;
+	}
+
+	footer ul{
+		margin-top: 10px;
+	}
+
+	footer li{
+		font-size: 0.7em;
+		padding: 5px 0px;
+	}
+
+	.activite img{
+		width: 100px;
+	}
