@@ -2,37 +2,19 @@
 	*{
 		margin: 0;
 		padding: 0;
-		overflow: hidden;
+		box-sizing: border-box;
 	}
 
 	body{
-		overflow-y: scroll;
 		height: 100vh;
 		width: 100%;
 	}
 
-	#app{
+	header, main{
 		font-family: 'Raleway', sans-serif;
-	}
-
-	#app > div{
 		margin: auto;
-		width: 1440px;
-		max-width: 80%;
-	}
-
-	h1{
-		font-size: 1.2em;
-	}
-	h2{
-		font-size: 1em;
-	}
-	h3{
-		font-size: 0.9em;
-		font-weight: bold;
-	}
-	h4{
-		font-size: 0.8em;
+		max-width: 1400px;
+		width: 80%;
 	}
 
 	.star-on{
@@ -201,19 +183,16 @@
 
 	.hebergement{
 		background-color: #F2F2F2;
-		border-radius: 15px;
-		width: 68%;
+		border-radius: 15px;		
+		margin:  auto;
+		padding: 30px 25px;
+		width: 65%;
 	}
 
 	.hebergement > div{
-		margin:  auto;
-		padding: 25px 20px 10px 25px;
-	}
-
-	.hebergement div > div{
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	.hebergement a{
@@ -224,7 +203,6 @@
 		color: black;
 		height: 160px;
 		margin: 10px 0px;
-		padding: 2px;
 		text-decoration: none;
 		width: 30%;
 	}
@@ -259,39 +237,33 @@
 /* Section : populaire */
 	.populaire{
 		background-color: #F2F2F2;
-		border-radius: 15px;
+		border-radius: 15px;		
+		margin:  auto;
+		padding: 30px 25px;
 		width: 30%;
 	}
 
-	.populaire > div{		
-		margin:  auto;
-		padding: 25px 20px 10px 25px;
-	}
-
-	.populaire > div div{
+	.populaire > div{
 		align-items: center;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
 	}
 
 	.populaire a{
 		background-color: #FFF;
 		border: 2px solid #FFF;
 		border-radius: 15px;
-		box-shadow: 1px 1px 6px rgba(0,0,0, 0.5);
+		box-shadow: 1px 1px 6px transparent;
 		color: black;
 		display: flex;
 		height: 110px;
 		justify-content: space-between;
 		margin: 10px 0px;
-		padding: 2px;
 		text-decoration: none;
-		width: 95%;
+		width: 100%;
 	}
 	.populaire a:hover{
 		box-shadow: 1px 1px 4px black;
-		padding: 1px;
 	}
 
 	.populaire img{
