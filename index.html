@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/style_responsive.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,9 @@
 	<body>
 		<header>
 			<div class="main-header">
-				<img src="img/logo/booki.png" alt="Logo Booki">
+				<img src="img/logo/booki.png"
+					srcset="img/logo/booki@3x.png 768w" 
+					alt="Logo Booki">
 
 				<nav>
 					<ul>
@@ -36,7 +38,7 @@
 					<form method="post">
 						<div>
 							<label for="location">
-								<i class="fa-solid fa-location-dot"></i>
+								<i class="fa-solid fa-location-dot icoMap"></i>
 							</label>
 							<div>
 								<input id="location" type="text" name="looking-from-map" autocomplete="off" placeholder="Ville, Pays">
@@ -293,19 +295,24 @@
 							</span>
 						</a>
 
-						<a href="#">
-							<img src="img/activites/4_small/fort_pomegues.jpg" alt="Fort de Pomègues">
 
-							<span>
-								<p>Fort de Pomègues</p>
-							</span>
+						<div>
+							<a href="#">
+								<img src="img/activites/4_small/fort_pomegues.jpg" alt="Fort de Pomègues">
 
-							<img src="img/activites/4_small/ile_frioul.jpg" alt="Île du Frioul">
+								<span>
+									<p>Fort de Pomègues</p>
+								</span>
+							</a>
 
-							<span>
-								<p>Île du Frioul</p>
-							</span>
-						</a>
+							<a href="#">
+								<img src="img/activites/4_small/ile_frioul.jpg" alt="Île du Frioul">
+
+								<span>
+									<p>Île du Frioul</p>
+								</span>
+							</a>
+						</div>
 
 						<a href="#">
 							<img src="img/activites/4_small/parc_national_calanques.jpg" alt="Parc National des Calanques">
@@ -316,21 +323,23 @@
 						</a>
 
 				
-						<a href="#">
-							<img src="img/activites/4_small/notre_dame_garde.jpg" alt="Notre-Dame-de-la-Garde">
+						<div>
+							<a href="#">
+								<img src="img/activites/4_small/notre_dame_garde.jpg" alt="Notre-Dame-de-la-Garde">
 
-							<span>
-								<p>Notre-Dame-de-la-Garde</p>
-							</span>
-						</a>
+								<span>
+									<p>Notre-Dame-de-la-Garde</p>
+								</span>
+							</a>
 
-						<a href="#">
-							<img src="img/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp">
+							<a href="#">
+								<img src="img/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp">
 
-							<span>
-								<p>Parc Longchamp</p>
-							</span>
-						</a>
+								<span>
+									<p>Parc Longchamp</p>
+								</span>
+							</a>
+						</div>
 					</div>			
 				</article>
 			</section>
