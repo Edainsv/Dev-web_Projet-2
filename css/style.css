@@ -8,13 +8,17 @@
 	header, main{
 		font-family: 'Raleway', sans-serif;
 		margin: auto;
-		max-width: 1300px;
+		max-width: 1200px;
 		width: 80%;
 	}
 
 	h1{
 		font-size: 1em;
 		font-weight: bold;
+	}
+
+	h3{
+		font-size: 0.9em;
 	}
 
 	.star-on{
@@ -27,6 +31,9 @@
 	}
 	.icoMap{
 		font-size: 1.2em;
+	}
+	.star{
+		padding-bottom: 5px;
 	}
 
 /* Header : nav */
@@ -94,7 +101,7 @@
 
 	.find-map input{
 		border: none;
-		font-size: 1.1em;
+		font-size: 0.7em;
 		padding: 0px 10px;
 	}
 	.find-map input:first-child{
@@ -163,7 +170,7 @@
 	.logo-info div{
 		align-items: center;
 		display: flex;
-		font-size: 0.6em;
+		font-size: 0.75em;
 		padding: 0px 15px;
 	}
 
@@ -201,7 +208,7 @@
 
 	.hebergement a{
 		background-color: #FFF;
-		border: 2px solid #FFF;
+		border: 3px solid #FFF;
 		border-radius: 15px;
 		box-shadow: 1px 1px 6px rgba(0,0,0, 0.5);
 		color: black;
@@ -218,17 +225,23 @@
 	.hebergement img{
 		border-top-left-radius: 12px;
 		border-top-right-radius: 12px;
-		height: 65%;
+		height: 60%;
 		object-fit: cover;
 		width: 100%;
 	}
 
-	.hebergement span p{
-		font-size: 0.8em;
+	.hebergement a > span{
+		display: flex;
+		flex-direction: column;
+		height: 40%;
+		justify-content: space-between;
+		padding: 5px 10px;
 	}
 
-	.hebergement a h4, .hebergement a p, .hebergement a > span span{
-		padding-left: 10px;
+	.hebergement span p{
+		display: flex;
+		flex-direction: column;
+		font-size: 0.8em;
 	}
 
 	.showMore{
@@ -243,10 +256,15 @@
 		background-color: #F2F2F2;
 		border-radius: 15px;
 		padding: 30px 25px;
-		width: 30%;
+		width: 32%;
 	}
 
-	.populaire > div{
+	.populaire > div:first-child{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.populaire > div:last-child{
 		align-items: center;
 		display: flex;
 		flex-direction: column;
@@ -286,52 +304,78 @@
 	}
 
 	.populaire span p{
-		font-size: 0.7em;
-		padding: 3px 0px;
+		display: flex;
+		flex-direction: column;
+		font-size: 0.8em;
+		padding: 3px;
 	}
 
 
 /* Section : activité  */
 	.activite{
+		margin-top: 40px;
+	}
+
+	.activite h2{
+		margin-bottom: 20px;
+	}
+
+	.bloc-activite{
 		display: flex;
-		flex-wrap: wrap;
+		font-size: 0.9em;
 		justify-content: space-between;
-		margin-top: 25px;
-		width: 100%;
 	}
 
-	.activite article{	
-		margin:  auto;
-		width: 100%;
-	}
-
-	.activite a{
-		color: initial;
-		text-decoration: none;
-	}
-
-	.activite div{
+	.bloc-activite > a, .bloc-activite > div{
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 23%;
 	}
 
-	.activite a, .activite div > div{
-		padding: 10px;
-		width: 25%;
-	}
-	.activite div > div > a{
-		width: 100%;
+	.bloc-activite a{
+		box-shadow: 1px 1px 6px rgb(0 0 0 / 50%);
+		border-radius: 15px;
+		position: relative;
 	}
 
-	.activite div div{
-		display: flex;
-		flex-direction: c;
+	.bloc-activite a:hover{
+		box-shadow: 1px 1px 4px black;
+	}
+
+	.special-act-style > a:first-child{
+		height: 56%;
+	}
+	.special-act-style > a:last-child{
+		height: 36%;
+	}
+
+	.special-act-style2 > a:first-child{
+		height: 36%;
+	}
+	.special-act-style2 > a:last-child{
+		height: 56%;
 	}
 
 	.activite img{
-			max-width: 100%;
-		}
+		border-radius: 15px;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
 
+	.bloc-activite span{
+		align-items: center;
+		background-color: #FFF;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		bottom: 0;
+		display: flex;
+		height: 40px;
+		padding-left: 10px;
+		position: absolute;
+		width: 100%;
+	}
 
 /* Footer  */
 	footer{
@@ -345,7 +389,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		max-width: 1200px;
 		margin: auto;
+		width: 80%;
 	}
 
 	footer > div div{
@@ -371,14 +417,49 @@
 @media screen and (max-width: 992px)
 {
 
+	h2{
+		font-size: 1.1em;
+	}
+
+	h3{
+		font-size: 0.7em;
+	}
+
+	.hebergement > div > a{
+		height: 150px;
+		width: 48%;
+	}
+
+	.populaire a{
+		height: 100px;
+	}
+
+	.populaire span p, .hebergement span p{
+		font-size: 0.73em;
+	}
+
+	.bloc-activite{
+		font-size: 0.75em;
+	}
 }
 
 /* Responsive mobile */
 @media screen and (max-width: 768px)
 {
 	header, main{
-		padding: 10px;
 		width: 100%;
+	}
+
+	h2{
+		font-size: 1.0em;
+	}
+
+	h3{
+		font-size: 0.6em;
+	}
+
+	.off-header, .filtre, .activite{
+		padding: 10px;
 	}
 
 	#location{
@@ -416,12 +497,54 @@
 		width: 100%;
 		background-color: transparent;
 	}
+
 	.populaire{
+		border-radius: 0;
+		width: 100%;
+	}
+
+	.populaire a{
+		height: 160px;
+	}
+
+	.hebergement > div > a{
+		height: 190px;
 		width: 100%;
 	}
 
 	.find-map div{
 		width: 100%;
+	}
+
+	.bloc-activite{
+		flex-direction: column;
+	}
+
+	.bloc-activite a{
+		height: 160px;
+		width: 100%;
+	}
+
+	.bloc-activite div{
+		width: 100%;
+	}
+
+	.special-act-style > a:first-child{
+		height: 160px;
+	}
+	.special-act-style > a:last-child{
+		height: 160px;
+	}
+
+	.special-act-style2 > a:first-child{
+		height: 160px;
+	}
+	.special-act-style2 > a:last-child{
+		height: 160px;
+	}
+
+	.special-act-style a, .special-act-style2 a, .bloc-activite a{
+		margin-bottom: 30px;
 	}
 
 	footer > div{

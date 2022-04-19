@@ -4,9 +4,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+		<!-- Font Awesome v6.1.1 -->
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!-- Police de texte -->
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +24,8 @@
 	<body>
 		<header>
 			<div class="main-header">
-				<img src="img/logo/booki.png"
-					srcset="img/logo/booki@3x.png 768w" 
+				<img src="img/logo/Booki.png"
+					srcset="img/logo/Booki@3x.png 768w" 
 					alt="Logo Booki">
 
 				<nav>
@@ -40,6 +46,7 @@
 							<label for="location">
 								<i class="fa-solid fa-location-dot icoMap"></i>
 							</label>
+
 							<div>
 								<input id="location" type="text" name="looking-from-map" autocomplete="off" placeholder="Ville, Pays">
 								<input type="submit" name="submit-search" value="Rechercher">
@@ -213,7 +220,10 @@
 				</article>
 
 				<article class="populaire">
-					<h2>Les plus populaires</h2>
+					<div>
+						<h2>Les plus populaires</h2>
+						<i class="fa-solid fa-chart-line"></i>
+					</div>
 
 					<div>
 						<a href="#">
@@ -286,7 +296,7 @@
 				<article>
 					<h2>Activités à Marseille</h2>
 
-					<div>
+					<div class="bloc-activite">
 						<a href="#">
 							<img src="img/activites/4_small/vieux_port.jpg" alt="Vieux Port">
 							
@@ -296,7 +306,7 @@
 						</a>
 
 
-						<div>
+						<div class="special-act-style">
 							<a href="#">
 								<img src="img/activites/4_small/fort_pomegues.jpg" alt="Fort de Pomègues">
 
@@ -323,7 +333,7 @@
 						</a>
 
 				
-						<div>
+						<div class="special-act-style2">
 							<a href="#">
 								<img src="img/activites/4_small/notre_dame_garde.jpg" alt="Notre-Dame-de-la-Garde">
 
