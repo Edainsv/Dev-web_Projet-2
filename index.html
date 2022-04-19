@@ -25,13 +25,14 @@
 		<header>
 			<div class="main-header">
 				<img src="img/logo/Booki.png"
-					srcset="img/logo/Booki@3x.png 768w" 
+					srcset="img/logo/Booki@3x.png 768w"
+					sizes="100vw" 
 					alt="Logo Booki">
 
 				<nav>
 					<ul>
-						<li><a href="#">Hébergements</a></li>
-						<li><a href="#">Activités</a></li>
+						<li><a href="#hebergement">Hébergements</a></li>
+						<li><a href="#activite">Activités</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -100,18 +101,18 @@
 		
 		<main>
 			<section class="card">
-				<article class="hebergement">
-					<h2>Hébergements à Marseille</h2>
+				<div class="hebergement">
+					<h2 id="hebergement">Hébergements à Marseille</h2>
 
 					<div>
 						<a href="#">
 							<img src="img/hebergements/4_small/auberge_la_cannebiere.jpg" alt="Auberge La Cannebière">
 							
 							<span>
-								<p>
+								<span>
 									Auberge La Cannebière
 									<small>Nuit à partir de 25€</small>
-								</p>
+								</span>
 
 								<span class="star">
 									<i class="fa-solid fa-star star-on"></i>
@@ -127,10 +128,10 @@
 							<img src="img/hebergements/4_small/hotel_du_port.jpg" alt="Hôtel du port">
 							
 							<span>
-								<p>
+								<span>
 									Hôtel du port
 									<small>Nuit à partir de 52€</small>
-								</p>
+								</span>
 
 								<span class="star">
 									<i class="fa-solid fa-star star-on"></i>
@@ -146,10 +147,10 @@
 							<img src="img/hebergements/4_small/hotel_les_mouettes.jpg" alt="Hôtel Les mouettes">
 							
 							<span>
-								<p>
+								<span>
 									Hôtel Les mouettes
 									<small>Nuit à partir de 76€</small>
-								</p>
+								</span>
 
 								<span class="star">
 									<i class="fa-solid fa-star star-on"></i>
@@ -165,10 +166,10 @@
 							<img src="img/hebergements/4_small/hotel_de_la_mer.jpg" alt="Hôtel de la mer">
 							
 							<span>
-								<p>
+								<span>
 									Hôtel de la mer
 									<small>Nuit à partir de 46€</small>
-								</p>
+								</span>
 
 								<span class="star">
 									<i class="fa-solid fa-star star-on"></i>
@@ -183,10 +184,10 @@
 						<a href="#">
 							<img src="img/hebergements/4_small/auberge_le_panier.jpg" alt="Auberge Le Panier">
 							<span>
-								<p>
+								<span>
 									Auberge Le Panier
 									<small>Nuit à partir de 23€</small>
-								</p>
+								</span>
 								<span class="star">
 									<i class="fa-solid fa-star star-on"></i>
 									<i class="fa-solid fa-star star-on"></i>
@@ -200,10 +201,10 @@
 						<a href="#">
 							<img src="img/hebergements/4_small/hotel_amina.jpg" alt="Hôtel chez Amina">
 							<span>
-								<p>
+								<span>
 									Hôtel chez Amina
 									<small>Nuit à partir de 96€</small>
-								</p>
+								</span>
 
 								<span class="star">
 									<i class="fa-solid fa-star star-on"></i>
@@ -217,7 +218,7 @@
 					</div>
 
 					<p class="showMore">Afficher plus</p>
-				</article>
+				</div>
 
 				<article class="populaire">
 					<div>
@@ -231,10 +232,10 @@
 							
 							<span>
 								<span>
-									<p>
+									<span>
 										Hôtel Le soleil du matin
 										<small>Nuit à partir de 128€</small>
-									</p>
+									</span>
 								</span>
 
 								<span class="star">
@@ -252,10 +253,10 @@
 							
 							<span>
 								<span>
-									<p>
+									<span>
 										Au cœur de l'eau Chambres d'Hôtes
 										<small>Nuit à partir de 71€</small>
-									</p>
+									</span>
 								</span>
 
 								<span class="star">
@@ -273,10 +274,10 @@
 							
 							<span>
 								<span>
-									<p>
+									<span>
 										Hôtel Tout bleu et Blanc
 										<small>Nuit à partir de 68€</small>
-									</p>
+									</span>
 								</span>
 
 								<span class="star">
@@ -292,16 +293,16 @@
 				</article>
 			</section>
 
-			<section class="activite">
+			<div class="activite">
 				<article>
-					<h2>Activités à Marseille</h2>
+					<h2 id="activite">Activités à Marseille</h2>
 
 					<div class="bloc-activite">
 						<a href="#">
 							<img src="img/activites/4_small/vieux_port.jpg" alt="Vieux Port">
 							
 							<span>
-								<p>Vieux Port</p>
+								<span>Vieux Port</span>
 							</span>
 						</a>
 
@@ -311,7 +312,7 @@
 								<img src="img/activites/4_small/fort_pomegues.jpg" alt="Fort de Pomègues">
 
 								<span>
-									<p>Fort de Pomègues</p>
+									<span>Fort de Pomègues</span>
 								</span>
 							</a>
 
@@ -319,7 +320,7 @@
 								<img src="img/activites/4_small/ile_frioul.jpg" alt="Île du Frioul">
 
 								<span>
-									<p>Île du Frioul</p>
+									<span>Île du Frioul</span>
 								</span>
 							</a>
 						</div>
@@ -328,7 +329,7 @@
 							<img src="img/activites/4_small/parc_national_calanques.jpg" alt="Parc National des Calanques">
 
 							<span>
-								<p>Parc National des Calanques</p>
+								<span>Parc National des Calanques</span>
 							</span>
 						</a>
 
@@ -338,7 +339,7 @@
 								<img src="img/activites/4_small/notre_dame_garde.jpg" alt="Notre-Dame-de-la-Garde">
 
 								<span>
-									<p>Notre-Dame-de-la-Garde</p>
+									<span>Notre-Dame-de-la-Garde</span>
 								</span>
 							</a>
 
@@ -346,13 +347,13 @@
 								<img src="img/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp">
 
 								<span>
-									<p>Parc Longchamp</p>
+									<span>Parc Longchamp</span>
 								</span>
 							</a>
 						</div>
 					</div>			
 				</article>
-			</section>
+			</div>
 		</main>
 
 		<footer>
@@ -362,9 +363,9 @@
 
 					<div>
 						<ul>
-							<li>Fonctionnement du site</li>
-							<li>Conditions générales de vente</li>
-							<li>Données et confidentialité</li>
+							<li><a href="#">Fonctionnement du site</a></li>
+							<li><a href="#">Conditions générales de vente</a></li>
+							<li><a href="#">Données et confidentialité</a></li>
 						</ul>
 					</div>
 				</div>
@@ -374,8 +375,8 @@
 
 					<div>
 						<ul>
-							<li>Charte qualité</li>
-							<li>Soumettre votre hôtel</li>
+							<li><a href="#">Charte qualité</a></li>
+							<li><a href="#">Soumettre votre hôtel</a></li>
 						</ul>
 					</div>
 				</div>
@@ -385,8 +386,8 @@
 
 					<div>
 						<ul>
-							<li>Centre d'aide</li>
-							<li>Nous contacter</li>
+							<li><a href="#">Centre d'aide</a></li>
+							<li><a href="#">Nous contacter</a></li>
 						</ul>
 					</div>
 				</div>
