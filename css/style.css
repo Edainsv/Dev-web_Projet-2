@@ -17,8 +17,9 @@
 		font-weight: bold;
 	}
 
-	h3{
+	footer h3{
 		font-size: 0.9em;
+		margin-top: 10px;
 	}
 
 	.star-on{
@@ -393,6 +394,7 @@
 		background-color: #FFF;
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
+		color: initial;
 		bottom: 0;
 		display: flex;
 		height: 40px;
@@ -457,6 +459,10 @@
 		font-size: 0.7em;
 	}
 
+	.find-map{
+		width: 60%;
+	}
+
 	.hebergement > div > a{
 		height: 150px;
 		width: 48%;
@@ -467,7 +473,7 @@
 	}
 
 	.populaire a > span > span, .hebergement a > span > span{
-		font-size: 0.73em;
+		font-size: 1.3em;
 	}
 
 	.bloc-activite{
@@ -487,7 +493,7 @@
 	}
 
 	h2{
-		font-size: 1.0em;
+		font-size: 1.2em;
 	}
 
 	h3{
@@ -543,6 +549,10 @@
 		height: 160px;
 	}
 
+	.populaire a > span > span, .hebergement a > span > span{
+		font-size: 1.2em;
+	}
+
 	.hebergement > div > a{
 		height: 190px;
 		width: 100%;
@@ -589,7 +599,6 @@
 	}
 
 	footer > div div{
-		margin-top: 30px;
 		width: 100%;
 	}
 }
