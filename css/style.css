@@ -5,8 +5,11 @@
 		box-sizing: border-box;
 	}
 
-	header, main{
+	body{
 		font-family: 'Raleway', sans-serif;
+	}
+
+	header, main{
 		margin: auto;
 		max-width: 1200px;
 		width: 80%;
@@ -33,23 +36,27 @@
 	.icoMap{
 		font-size: 1.2em;
 	}
-	.star{
-		padding-bottom: 5px;
-	}
 
 /* Header : nav */
 	.main-header{
 		display: flex;
 		font-size: 0.9em;
 		justify-content: space-between;
+		height: 80px;
+		align-items: center;
 	}
 
 	.main-header img{
-		max-width: 200px;
+		height: 50px;
 	}
 
-	.main-header nav ul{
+	.main-header nav, .main-header ul {
+		height: 100%;
+	}
+
+	.main-header ul{
 		display: flex;
+		align-items: center;
 	}
 
 	.main-header li{
@@ -57,6 +64,9 @@
 		border-top: 2px solid transparent;
 		justify-content: center;
 		list-style-type: none;
+		height: 100%;
+		display: flex;
+		align-items: center;
 	}
 	.main-header li:hover{
 		border-top: 2px solid #0065FC;
@@ -420,7 +430,7 @@
 		width: 80%;
 	}
 
-	footer > div div{
+	footer > div > div{
 		width: 33.3%;
 	}
 
@@ -431,7 +441,7 @@
 	footer li{
 		font-size: 0.8em;
 		list-style-type: none;
-		padding: 5px 0px;
+		padding: 10px 0px;
 	}
 
 	footer a{
@@ -460,7 +470,7 @@
 	}
 
 	.find-map{
-		width: 60%;
+		width: 100%;
 	}
 
 	.hebergement > div > a{
@@ -473,7 +483,7 @@
 	}
 
 	.populaire a > span > span, .hebergement a > span > span{
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 
 	.bloc-activite{
@@ -504,7 +514,15 @@
 		padding: 10px;
 	}
 
+	.off-header{
+		margin-top: 40px;
+	}
+
 	#location{
+		width: 100%;
+	}
+
+	.main-header nav{
 		width: 100%;
 	}
 
